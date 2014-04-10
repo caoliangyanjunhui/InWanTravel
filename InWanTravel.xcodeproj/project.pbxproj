@@ -20,6 +20,7 @@
 		DB63040718F74ABB0056F188 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB63040518F74ABB0056F188 /* InfoPlist.strings */; };
 		DB63040918F74ABB0056F188 /* InWanTravelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB63040818F74ABB0056F188 /* InWanTravelTests.m */; };
 		DB8237E418F75AEA00F6DD86 /* WebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8237E318F75AEA00F6DD86 /* WebBrowserViewController.m */; };
+		DB8237E718F7628A00F6DD86 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8237E618F7628A00F6DD86 /* MainNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		DB63040818F74ABB0056F188 /* InWanTravelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InWanTravelTests.m; sourceTree = "<group>"; };
 		DB8237E218F75AEA00F6DD86 /* WebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBrowserViewController.h; sourceTree = "<group>"; };
 		DB8237E318F75AEA00F6DD86 /* WebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBrowserViewController.m; sourceTree = "<group>"; };
+		DB8237E518F7628A00F6DD86 /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		DB8237E618F7628A00F6DD86 /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 			children = (
 				DB8237E218F75AEA00F6DD86 /* WebBrowserViewController.h */,
 				DB8237E318F75AEA00F6DD86 /* WebBrowserViewController.m */,
+				DB8237E518F7628A00F6DD86 /* MainNavigationController.h */,
+				DB8237E618F7628A00F6DD86 /* MainNavigationController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 			files = (
 				DB6303F418F74ABB0056F188 /* AppDelegate.m in Sources */,
 				DB8237E418F75AEA00F6DD86 /* WebBrowserViewController.m in Sources */,
+				DB8237E718F7628A00F6DD86 /* MainNavigationController.m in Sources */,
 				DB6303F018F74ABB0056F188 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

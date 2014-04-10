@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainNavigationController.h"
 #import "WebBrowserViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>{
-    UINavigationController *homeNavigationController;
+    MainNavigationController *homeNavigationController;
     WebBrowserViewController *browserViewController;
 }
 

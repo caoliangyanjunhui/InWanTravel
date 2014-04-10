@@ -14,27 +14,17 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    UIColor *bgColor = [UIColor colorWithRed:0x29/255.0 green:0x66/255.0 blue:0xC3/255.0 alpha:1.0f];
+    
     self.window.backgroundColor = [UIColor whiteColor];
-    homeNavigationController = [[UINavigationController alloc]initWithNibName:nil bundle:nil];
+    homeNavigationController = [[MainNavigationController alloc]initWithNibName:nil bundle:nil];
     self.window.rootViewController = homeNavigationController;
     browserViewController = [[WebBrowserViewController alloc]initWithNibName:nil bundle:nil];
-    [self setNavigationBarColor:bgColor];
+    
     [homeNavigationController pushViewController:browserViewController animated:NO];
     [self.window makeKeyAndVisible];
     return YES;
 }
 
-- (void)setNavigationBarColor:(UIColor *)color
-{
-    NSArray *ver = [[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."];
-    if ([[ver objectAtIndex:0] intValue] >= 7) {
-        homeNavigationController.navigationBar.barTintColor = color;
-        homeNavigationController.navigationBar.translucent = NO;
-    }else {
-        homeNavigationController.navigationBar.tintColor = color;
-    }
-}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
