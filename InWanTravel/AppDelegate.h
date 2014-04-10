@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebBrowserViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    UINavigationController *homeNavigationController;
+    WebBrowserViewController *browserViewController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

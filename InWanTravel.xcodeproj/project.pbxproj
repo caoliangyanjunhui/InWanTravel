@@ -19,6 +19,7 @@
 		DB6303FF18F74ABB0056F188 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6303E718F74ABB0056F188 /* UIKit.framework */; };
 		DB63040718F74ABB0056F188 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB63040518F74ABB0056F188 /* InfoPlist.strings */; };
 		DB63040918F74ABB0056F188 /* InWanTravelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB63040818F74ABB0056F188 /* InWanTravelTests.m */; };
+		DB8237E418F75AEA00F6DD86 /* WebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8237E318F75AEA00F6DD86 /* WebBrowserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		DB63040418F74ABB0056F188 /* InWanTravelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InWanTravelTests-Info.plist"; sourceTree = "<group>"; };
 		DB63040618F74ABB0056F188 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DB63040818F74ABB0056F188 /* InWanTravelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InWanTravelTests.m; sourceTree = "<group>"; };
+		DB8237E218F75AEA00F6DD86 /* WebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBrowserViewController.h; sourceTree = "<group>"; };
+		DB8237E318F75AEA00F6DD86 /* WebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBrowserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 		DB6303E918F74ABB0056F188 /* InWanTravel */ = {
 			isa = PBXGroup;
 			children = (
+				DB8237E118F75AEA00F6DD86 /* ViewController */,
 				DB6303F218F74ABB0056F188 /* AppDelegate.h */,
 				DB6303F318F74ABB0056F188 /* AppDelegate.m */,
 				DB6303F518F74ABB0056F188 /* Images.xcassets */,
@@ -142,6 +146,15 @@
 				DB63040518F74ABB0056F188 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB8237E118F75AEA00F6DD86 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DB8237E218F75AEA00F6DD86 /* WebBrowserViewController.h */,
+				DB8237E318F75AEA00F6DD86 /* WebBrowserViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB6303F418F74ABB0056F188 /* AppDelegate.m in Sources */,
+				DB8237E418F75AEA00F6DD86 /* WebBrowserViewController.m in Sources */,
 				DB6303F018F74ABB0056F188 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
