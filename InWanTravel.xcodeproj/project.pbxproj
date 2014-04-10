@@ -452,6 +452,7 @@
 				DB63040E18F74ABB0056F188 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB63040F18F74ABB0056F188 /* Build configuration list for PBXNativeTarget "InWanTravelTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +461,7 @@
 				DB63041118F74ABB0056F188 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
