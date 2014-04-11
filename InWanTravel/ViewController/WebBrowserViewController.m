@@ -47,7 +47,8 @@
 
 - (void)accessWebPage
 {
-    NSString *urlString = @"http://inwan.me:8080/web/html/ApplyState.html";
+    //NSString *urlString = @"http://inwan.me:8080/web/html/ApplyState.html";
+    NSString *urlString = @"http://www.aoxsdesign.com";
     NSURL *url = [NSURL URLWithString:urlString];
     NSLog(@"%@", urlString);
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
