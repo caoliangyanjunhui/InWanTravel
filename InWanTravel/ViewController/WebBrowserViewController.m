@@ -12,13 +12,17 @@
 
 @end
 
-@implementation WebBrowserViewController
+@implementation WebBrowserViewController {
+    UIWebView *webView;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.title = @"印湾自由行";
+        [self drawWebView];
+        [self accessWebPage];
     }
     return self;
 }
@@ -33,6 +37,21 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)drawWebView
+{
+    webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, 320, 480)];
+    [self.view addSubview:webView];
+}
+
+- (void)accessWebPage
+{
+    NSString *urlString = @"http://inwan.me:8080/web/html/ApplyState.html";
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSLog(@"%@", urlString);
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
 }
 
 @end

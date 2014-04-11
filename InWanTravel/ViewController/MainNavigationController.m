@@ -20,6 +20,7 @@
     if (self) {
         UIColor *bgColor = [UIColor colorWithRed:0x29/255.0 green:0x66/255.0 blue:0xC3/255.0 alpha:1.0f];
         [self setNavigationBarColor:bgColor];
+        [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     }
     return self;
 }
