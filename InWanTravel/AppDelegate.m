@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CouponViewController.h"
 
 @implementation AppDelegate
 
@@ -18,9 +19,10 @@
     self.window.backgroundColor = [UIColor whiteColor];
     homeNavigationController = [[MainNavigationController alloc]initWithNibName:nil bundle:nil];
     self.window.rootViewController = homeNavigationController;
-    browserViewController = [[WebBrowserViewController alloc]initWithNibName:nil bundle:nil];
-    
-    [homeNavigationController pushViewController:browserViewController animated:NO];
+    //browserViewController = [[WebBrowserViewController alloc]initWithNibName:nil bundle:nil];
+    //[homeNavigationController pushViewController:browserViewController animated:NO];
+    CouponViewController *cVC = [[CouponViewController alloc]initWithNibName:nil bundle:nil];
+    [homeNavigationController pushViewController:cVC animated:NO];
     [self.window makeKeyAndVisible];
     return YES;
 }
