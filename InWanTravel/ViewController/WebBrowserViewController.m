@@ -7,6 +7,7 @@
 //
 
 #import "WebBrowserViewController.h"
+#import "CouponViewController.h"
 
 @interface WebBrowserViewController ()
 
@@ -30,7 +31,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	UIBarButtonItem *couponButton = [[UIBarButtonItem alloc]
+                                   initWithTitle:@"优惠券"
+                                   style:UIBarButtonItemStyleBordered
+                                   target:self
+                                   action:@selector(couponButtonClick)];
+    self.navigationItem.rightBarButtonItem = couponButton;
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,6 +60,12 @@
     NSLog(@"%@", urlString);
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [webView loadRequest:request];
+}
+
+- (void)couponButtonClick
+{
+    CouponViewController *couponVC = [[CouponViewController alloc]initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:couponVC animated:YES];
 }
 
 @end
