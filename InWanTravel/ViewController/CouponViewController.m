@@ -7,6 +7,7 @@
 //
 
 #import "CouponViewController.h"
+#import "CouponData.h"
 
 @interface CouponViewController ()
 
@@ -15,6 +16,7 @@
 @implementation CouponViewController {
     UIScrollView *scrollView;
     UIPageControl * pagecontrol;
+    CouponData * couponData;
     
 }
 
@@ -24,6 +26,7 @@
     if (self) {
         self.view.backgroundColor = [UIColor whiteColor];
         
+        
     }
     return self;
 }
@@ -32,6 +35,8 @@
 {
     [super viewDidLoad];
     
+    couponData = [CouponData new];
+    
     scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 20, 320, 460)];
     scrollView.bounces = NO;
     scrollView.pagingEnabled = YES;
@@ -39,7 +44,7 @@
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.showsVerticalScrollIndicator = NO;
     //scrollView.indicatorStyle=UIScrollViewIndicatorStyleBlack;//滚动指示器的风格
-    scrollView.contentSize=CGSizeMake(scrollView.frame.size.width*3, scrollView.frame.size.height); //滚动的区域，三个页面的宽度
+    scrollView.contentSize=CGSizeMake(scrollView.frame.size.width*couponData.couponVertical.count, scrollView.frame.size.height); //滚动的区域，三个页面的宽度
     scrollView.contentOffset = CGPointMake(0, 20);
     scrollView.scrollsToTop=NO;
     scrollView.directionalLockEnabled=YES;//只能一个方向滚动
@@ -53,31 +58,36 @@
     pagecontrol.backgroundColor=[UIColor clearColor];
     pagecontrol.hidesForSinglePage=YES;
     pagecontrol.userInteractionEnabled=NO;
-    pagecontrol.numberOfPages=3; //页面数为3
+    pagecontrol.numberOfPages = couponData.couponVertical.count;
     pagecontrol.currentPage=0;   //当前默认为第一页
     [self.view addSubview:pagecontrol];
     
-    
-    UIImageView *iv1 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"LKM1307"]];
-    iv1.frame = CGRectMake(0, 0, 320, 460);
-    UIImageView *iv2 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"LKM1308"]];
-    iv2.frame = CGRectMake(320, 0, 320, 460);
-    UIImageView *iv3 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"LKM1310"]];
-    iv3.frame = CGRectMake(320*2, 0, 320, 460);
-    
-    [scrollView addSubview:iv1];
-    [scrollView addSubview:iv2];
-    [scrollView addSubview:iv3];
+    [self loadCoupons];
 }
 
-//手指离开屏幕后ScrollView还会继续滚动一段时间只到停止
--(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     int index =fabs(scrollView.contentOffset.x)/scrollView.frame.size.width;
     pagecontrol.currentPage=index;
     
 }
 
+- (void)loadCoupons
+{
+    UIImageView *imageView;
+    NSString *imageName;
+    NSArray *nameList = couponData.couponVertical;
+    NSLog(@"%d", nameList.count);
+    for (int i=0; i < nameList.count; i++) {
+        imageName = [nameList objectAtIndex:i];
+        NSLog(@"%@", imageName);
+        imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:imageName]];
+        imageView.frame = CGRectMake(320*i, 0, 320, 460);
+        [scrollView addSubview:imageView];
+    }
+
+}
 
 
 - (void)viewWillAppear:(BOOL)animated

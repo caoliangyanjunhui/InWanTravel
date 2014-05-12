@@ -73,6 +73,7 @@
 		DBB89E44192089A5007A5623 /* LKM1412@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBB89E12192089A5007A5623 /* LKM1412@2x.png */; };
 		DBB89E45192089A5007A5623 /* LKM1418@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBB89E13192089A5007A5623 /* LKM1418@2x.png */; };
 		DBB89E481920BAF9007A5623 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB89E471920BAF9007A5623 /* RootNavigationController.m */; };
+		DBB89E5019217F80007A5623 /* CouponData.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB89E4F19217F80007A5623 /* CouponData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +161,8 @@
 		DBB89E13192089A5007A5623 /* LKM1418@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LKM1418@2x.png"; sourceTree = "<group>"; };
 		DBB89E461920BAF9007A5623 /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
 		DBB89E471920BAF9007A5623 /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
+		DBB89E4E19217F80007A5623 /* CouponData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponData.h; sourceTree = "<group>"; };
+		DBB89E4F19217F80007A5623 /* CouponData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +222,8 @@
 		DB6303E918F74ABB0056F188 /* InWanTravel */ = {
 			isa = PBXGroup;
 			children = (
+				DBB89E4D19217F6B007A5623 /* data */,
+				DBB89E4919217A8C007A5623 /* helper */,
 				DBB89E461920BAF9007A5623 /* RootNavigationController.h */,
 				DBB89E471920BAF9007A5623 /* RootNavigationController.m */,
 				DBB89DDF192089A5007A5623 /* images */,
@@ -344,6 +349,22 @@
 				DBB89E13192089A5007A5623 /* LKM1418@2x.png */,
 			);
 			path = couponVertical;
+			sourceTree = "<group>";
+		};
+		DBB89E4919217A8C007A5623 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		DBB89E4D19217F6B007A5623 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				DBB89E4E19217F80007A5623 /* CouponData.h */,
+				DBB89E4F19217F80007A5623 /* CouponData.m */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,6 +515,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB89E5019217F80007A5623 /* CouponData.m in Sources */,
 				DB6303F418F74ABB0056F188 /* AppDelegate.m in Sources */,
 				DBB89E481920BAF9007A5623 /* RootNavigationController.m in Sources */,
 				DBB89CA91920729D007A5623 /* CouponViewController.m in Sources */,
