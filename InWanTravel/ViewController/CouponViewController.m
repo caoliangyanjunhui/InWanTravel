@@ -22,7 +22,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.view.backgroundColor = [UIColor lightGrayColor];
+        self.view.backgroundColor = [UIColor whiteColor];
         
     }
     return self;
@@ -32,15 +32,15 @@
 {
     [super viewDidLoad];
     
-    scrollView = [[UIScrollView alloc]initWithFrame:self.view.frame];
-    scrollView.bounces=YES;
+    scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 20, 320, 460)];
+    scrollView.bounces = NO;
     scrollView.pagingEnabled = YES;
     scrollView.userInteractionEnabled = YES;
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.showsVerticalScrollIndicator = NO;
     //scrollView.indicatorStyle=UIScrollViewIndicatorStyleBlack;//滚动指示器的风格
     scrollView.contentSize=CGSizeMake(scrollView.frame.size.width*3, scrollView.frame.size.height); //滚动的区域，三个页面的宽度
-    scrollView.contentOffset = CGPointMake(0, 0);
+    scrollView.contentOffset = CGPointMake(0, 20);
     scrollView.scrollsToTop=NO;
     scrollView.directionalLockEnabled=YES;//只能一个方向滚动
     scrollView.delegate = self;
@@ -59,10 +59,11 @@
     
     
     UIImageView *iv1 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"LKM1307"]];
+    iv1.frame = CGRectMake(0, 0, 320, 460);
     UIImageView *iv2 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"LKM1308"]];
-    iv2.center = CGPointMake(iv2.center.x + 320, iv2.center.y);
+    iv2.frame = CGRectMake(320, 0, 320, 460);
     UIImageView *iv3 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"LKM1310"]];
-    iv3.center = CGPointMake(iv3.center.x + 320*2, iv3.center.y);
+    iv3.frame = CGRectMake(320*2, 0, 320, 460);
     
     [scrollView addSubview:iv1];
     [scrollView addSubview:iv2];

@@ -41,14 +41,15 @@
 
 - (void)drawWebView
 {
-    webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, 320, 480)];
+    webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -45, 320, 540)];
     [self.view addSubview:webView];
 }
 
 - (void)accessWebPage
 {
     //NSString *urlString = @"http://inwan.me:8080/web/html/ApplyState.html";
-    NSString *urlString = @"http://www.aoxsdesign.com";
+    //NSString *urlString = @"http://www.aoxsdesign.com";
+    NSString *urlString = @"http://inwan.me:8080/web/html/appapplystate.html";
     NSURL *url = [NSURL URLWithString:urlString];
     NSLog(@"%@", urlString);
     NSURLRequest *request = [NSURLRequest requestWithURL:url];

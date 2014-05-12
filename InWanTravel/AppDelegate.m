@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RootNavigationController.h"
 #import "CouponViewController.h"
 
 @implementation AppDelegate
@@ -17,12 +18,15 @@
     // Override point for customization after application launch.
     
     self.window.backgroundColor = [UIColor whiteColor];
-    homeNavigationController = [[MainNavigationController alloc]initWithNibName:nil bundle:nil];
-    self.window.rootViewController = homeNavigationController;
+    //homeNavigationController = [[MainNavigationController alloc]initWithNibName:nil bundle:nil];
+    //self.window.rootViewController = homeNavigationController;
     //browserViewController = [[WebBrowserViewController alloc]initWithNibName:nil bundle:nil];
     //[homeNavigationController pushViewController:browserViewController animated:NO];
-    CouponViewController *cVC = [[CouponViewController alloc]initWithNibName:nil bundle:nil];
-    [homeNavigationController pushViewController:cVC animated:NO];
+    RootNavigationController *rootNC = [[RootNavigationController alloc]initWithNibName:nil bundle:nil];
+    self.window.rootViewController = rootNC;
+    //CouponViewController *cVC = [[CouponViewController alloc]initWithNibName:nil bundle:nil];
+    browserViewController = [[WebBrowserViewController alloc]initWithNibName:nil bundle:nil];
+    [rootNC pushViewController:browserViewController animated:NO];
     [self.window makeKeyAndVisible];
     return YES;
 }

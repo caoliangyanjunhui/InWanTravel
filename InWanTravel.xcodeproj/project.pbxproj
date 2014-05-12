@@ -72,6 +72,7 @@
 		DBB89E43192089A5007A5623 /* LKM1411@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBB89E11192089A5007A5623 /* LKM1411@2x.png */; };
 		DBB89E44192089A5007A5623 /* LKM1412@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBB89E12192089A5007A5623 /* LKM1412@2x.png */; };
 		DBB89E45192089A5007A5623 /* LKM1418@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBB89E13192089A5007A5623 /* LKM1418@2x.png */; };
+		DBB89E481920BAF9007A5623 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB89E471920BAF9007A5623 /* RootNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +158,8 @@
 		DBB89E11192089A5007A5623 /* LKM1411@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LKM1411@2x.png"; sourceTree = "<group>"; };
 		DBB89E12192089A5007A5623 /* LKM1412@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LKM1412@2x.png"; sourceTree = "<group>"; };
 		DBB89E13192089A5007A5623 /* LKM1418@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LKM1418@2x.png"; sourceTree = "<group>"; };
+		DBB89E461920BAF9007A5623 /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
+		DBB89E471920BAF9007A5623 /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +219,8 @@
 		DB6303E918F74ABB0056F188 /* InWanTravel */ = {
 			isa = PBXGroup;
 			children = (
+				DBB89E461920BAF9007A5623 /* RootNavigationController.h */,
+				DBB89E471920BAF9007A5623 /* RootNavigationController.m */,
 				DBB89DDF192089A5007A5623 /* images */,
 				DB8237E118F75AEA00F6DD86 /* ViewController */,
 				DB6303F218F74ABB0056F188 /* AppDelegate.h */,
@@ -490,6 +495,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB6303F418F74ABB0056F188 /* AppDelegate.m in Sources */,
+				DBB89E481920BAF9007A5623 /* RootNavigationController.m in Sources */,
 				DBB89CA91920729D007A5623 /* CouponViewController.m in Sources */,
 				DB8237E418F75AEA00F6DD86 /* WebBrowserViewController.m in Sources */,
 				DB8237E718F7628A00F6DD86 /* MainNavigationController.m in Sources */,
