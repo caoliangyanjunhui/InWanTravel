@@ -65,6 +65,10 @@
     [self loadCoupons];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    self.navigationController.navigationBar.hidden = NO;
+}
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html  lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta  charset="utf-8">
+    <title>inwan办证进度查询</title>
+    <meta  name="viewport"  content="width=device-width, initial-scale=1.0">
+    <meta  name="renderer"  content="webkit">
+    <base href="http://inwan.me:8080/web/html/" />
+    <link  href="http://inwan.me:8080/web/assets/bootstrap/css/bootstrap.css"  rel="stylesheet"  media="screen">
+    <style>
+    body {
+  padding-top: 110px;
+}
+    </style>
+    <link  href="http://inwan.me:8080/web/assets/bootstrap/css/bootstrap-responsive.css"  rel="stylesheet"  media="screen">
+    <link  href="http://inwan.me:8080/web/assets/css/pre.css"  rel="stylesheet"  media="screen">
+
+  </head>
+  <body>
+ 
+ <div  class="container">
+<div  class="pre_container">
+  <div  class="pre_header">
+    入台证进度查询
+  </div>
+  <div  class="pre_form">
+  	<form id="searchform" onsubmit="return false">
+       <div  class="form_row_rutaiorders">
+         <input id="id_card" type="text" name="id_card"  placeholder="   身份证号 / 通行证号码">
+       </div>
+       <ul class="signup_forms_errors" id="errul" style=" display:none;">
+            <li class="error" id="result"></li>
+        </ul>
+        <button  name="search" id="search"  class="pre_form_submit">查询进度</button>
+     </form>
+  </div>
+<!--  <div  class="pre_orders_results">-->
+<!--    <div  class="rows">-->
+<!--      <div  class="col-left">-->
+<!--        <div  class="name">-->
+<!--   			<p id="result" align="center"></p>     -->
+<!--        </div>-->
+<!--        <div  class="date">2014/03/14-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div  class="col-right">-->
+<!--        <div  class="state pre_yes ">发送成功-->
+<!--        </div>-->
+<!--        <div  class="desc">请用注册邮箱查收-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+</div>
+</div>
+    <script  src="http://inwan.me:8080/web/assets/jquery-1.10.2.js"></script>
+    <script  src="http://inwan.me:8080/web/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://inwan.me:8080/web/assets/sea.js"></script>
+	<script src="http://inwan.me:8080/web/jsp/seajsconfig.jsp"></script>
+  	<script>
+			seajs.use("http://inwan.me:8080/web/assets/js/appapplystate.js");
+		</script>
+</body></html>

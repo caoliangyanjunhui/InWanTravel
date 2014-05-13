@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB29CF8D1921F6F1000EAB57 /* appapplystate.html in Resources */ = {isa = PBXBuildFile; fileRef = DB29CF8C1921F6F1000EAB57 /* appapplystate.html */; };
 		DB6303E418F74ABB0056F188 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6303E318F74ABB0056F188 /* Foundation.framework */; };
 		DB6303E618F74ABB0056F188 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6303E518F74ABB0056F188 /* CoreGraphics.framework */; };
 		DB6303E818F74ABB0056F188 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6303E718F74ABB0056F188 /* UIKit.framework */; };
@@ -87,6 +88,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB29CF8C1921F6F1000EAB57 /* appapplystate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = appapplystate.html; sourceTree = "<group>"; };
 		DB6303E018F74ABB0056F188 /* InWanTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InWanTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6303E318F74ABB0056F188 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB6303E518F74ABB0056F188 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -361,6 +363,7 @@
 		DBB89E4D19217F6B007A5623 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				DB29CF8C1921F6F1000EAB57 /* appapplystate.html */,
 				DBB89E4E19217F80007A5623 /* CouponData.h */,
 				DBB89E4F19217F80007A5623 /* CouponData.m */,
 			);
@@ -446,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBB89E33192089A5007A5623 /* LKM1316@2x.png in Resources */,
+				DB29CF8D1921F6F1000EAB57 /* appapplystate.html in Resources */,
 				DBB89E35192089A5007A5623 /* LKM1320@2x.png in Resources */,
 				DBB89E2E192089A5007A5623 /* LKM1307@2x.png in Resources */,
 				DBB89E1B192089A5007A5623 /* MS14016_LK@2x.png in Resources */,

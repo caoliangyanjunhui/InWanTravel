@@ -20,7 +20,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         [self navigationBarToTranslucent];
-        //self.navigationBar.hidden = NO;
     }
     return self;
 }
@@ -46,6 +45,8 @@
     self.navigationBar.shadowImage = [UIImage new];
     self.navigationBar.translucent = YES;
     self.view.backgroundColor = [UIColor clearColor];
+    self.navigationBar.tintColor = [UIColor whiteColor];
+    [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
 }
 
 @end
