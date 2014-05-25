@@ -7,13 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MainNavigationController.h"
-#import "WebBrowserViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>{
-    MainNavigationController *homeNavigationController;
-    WebBrowserViewController *browserViewController;
-}
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

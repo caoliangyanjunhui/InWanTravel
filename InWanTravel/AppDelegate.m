@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "RootNavigationController.h"
-#import "CouponViewController.h"
+//#import "CouponViewController.h"
+#import "HomeViewController.h"
 
 @implementation AppDelegate
 
@@ -25,8 +26,10 @@
     RootNavigationController *rootNC = [[RootNavigationController alloc]initWithNibName:nil bundle:nil];
     self.window.rootViewController = rootNC;
     //CouponViewController *cVC = [[CouponViewController alloc]initWithNibName:nil bundle:nil];
-    browserViewController = [[WebBrowserViewController alloc]initWithNibName:nil bundle:nil];
-    [rootNC pushViewController:browserViewController animated:NO];
+    //browserViewController = [[WebBrowserViewController alloc]initWithNibName:nil bundle:nil];
+    //[rootNC pushViewController:browserViewController animated:NO];
+    HomeViewController *homeVC = [[HomeViewController alloc]initWithNibName:nil bundle:nil];
+    [rootNC pushViewController:homeVC animated:NO];
     [self.window makeKeyAndVisible];
     return YES;
 }

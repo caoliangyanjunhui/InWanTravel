@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB25C29719329B9900F77C95 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB25C29619329B9900F77C95 /* HomeViewController.m */; };
+		DB25C29B19329EC600F77C95 /* airportCar.png in Resources */ = {isa = PBXBuildFile; fileRef = DB25C29919329EC600F77C95 /* airportCar.png */; };
+		DB25C29C19329EC600F77C95 /* coupon.png in Resources */ = {isa = PBXBuildFile; fileRef = DB25C29A19329EC600F77C95 /* coupon.png */; };
 		DB29CF8D1921F6F1000EAB57 /* appapplystate.html in Resources */ = {isa = PBXBuildFile; fileRef = DB29CF8C1921F6F1000EAB57 /* appapplystate.html */; };
 		DB6303E418F74ABB0056F188 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6303E318F74ABB0056F188 /* Foundation.framework */; };
 		DB6303E618F74ABB0056F188 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6303E518F74ABB0056F188 /* CoreGraphics.framework */; };
@@ -88,6 +91,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB25C29519329B9900F77C95 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		DB25C29619329B9900F77C95 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		DB25C29919329EC600F77C95 /* airportCar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airportCar.png; sourceTree = "<group>"; };
+		DB25C29A19329EC600F77C95 /* coupon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coupon.png; sourceTree = "<group>"; };
 		DB29CF8C1921F6F1000EAB57 /* appapplystate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = appapplystate.html; sourceTree = "<group>"; };
 		DB6303E018F74ABB0056F188 /* InWanTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InWanTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6303E318F74ABB0056F188 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -191,6 +198,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB25C29819329EC600F77C95 /* button */ = {
+			isa = PBXGroup;
+			children = (
+				DB25C29919329EC600F77C95 /* airportCar.png */,
+				DB25C29A19329EC600F77C95 /* coupon.png */,
+			);
+			path = button;
+			sourceTree = "<group>";
+		};
 		DB6303D718F74ABB0056F188 = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +292,8 @@
 				DB8237E618F7628A00F6DD86 /* MainNavigationController.m */,
 				DBB89CA71920729D007A5623 /* CouponViewController.h */,
 				DBB89CA81920729D007A5623 /* CouponViewController.m */,
+				DB25C29519329B9900F77C95 /* HomeViewController.h */,
+				DB25C29619329B9900F77C95 /* HomeViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -283,6 +301,7 @@
 		DBB89DDF192089A5007A5623 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				DB25C29819329EC600F77C95 /* button */,
 				DBB89DE0192089A5007A5623 /* couponHorizon */,
 				DBB89DFB192089A5007A5623 /* couponVertical */,
 			);
@@ -462,6 +481,7 @@
 				DBB89E26192089A5007A5623 /* MS14040_LK@2x.png in Resources */,
 				DBB89E2D192089A5007A5623 /* MS14072_LK@2x.png in Resources */,
 				DBB89E3B192089A5007A5623 /* LKM1336@2x.png in Resources */,
+				DB25C29C19329EC600F77C95 /* coupon.png in Resources */,
 				DB6303EE18F74ABB0056F188 /* InfoPlist.strings in Resources */,
 				DBB89E25192089A5007A5623 /* MS14038_LK@2x.png in Resources */,
 				DBB89E1A192089A5007A5623 /* MS14010_LK@2x.png in Resources */,
@@ -490,6 +510,7 @@
 				DBB89E31192089A5007A5623 /* LKM1314@2x.png in Resources */,
 				DBB89E3A192089A5007A5623 /* LKM1331@2x.png in Resources */,
 				DBB89E16192089A5007A5623 /* MS14001_LK@2x.png in Resources */,
+				DB25C29B19329EC600F77C95 /* airportCar.png in Resources */,
 				DBB89E3F192089A5007A5623 /* LKM1402@2x.png in Resources */,
 				DBB89E22192089A5007A5623 /* MS14034_LK@2x.png in Resources */,
 				DBB89E32192089A5007A5623 /* LKM1315@2x.png in Resources */,
@@ -526,6 +547,7 @@
 				DB8237E418F75AEA00F6DD86 /* WebBrowserViewController.m in Sources */,
 				DB8237E718F7628A00F6DD86 /* MainNavigationController.m in Sources */,
 				DB6303F018F74ABB0056F188 /* main.m in Sources */,
+				DB25C29719329B9900F77C95 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
