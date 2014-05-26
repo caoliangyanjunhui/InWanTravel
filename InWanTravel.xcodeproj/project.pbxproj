@@ -10,6 +10,11 @@
 		DB25C29719329B9900F77C95 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB25C29619329B9900F77C95 /* HomeViewController.m */; };
 		DB25C29B19329EC600F77C95 /* airportCar.png in Resources */ = {isa = PBXBuildFile; fileRef = DB25C29919329EC600F77C95 /* airportCar.png */; };
 		DB25C29C19329EC600F77C95 /* coupon.png in Resources */ = {isa = PBXBuildFile; fileRef = DB25C29A19329EC600F77C95 /* coupon.png */; };
+		DB25C29F1932A1AB00F77C95 /* BookCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB25C29E1932A1AB00F77C95 /* BookCarViewController.m */; };
+		DB25C2A11932A79400F77C95 /* login@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB25C2A01932A79400F77C95 /* login@2x.png */; };
+		DB25C2A91932ABF400F77C95 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB25C2A61932ABF400F77C95 /* libWeiboSDK.a */; };
+		DB25C2AA1932ABF400F77C95 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB25C2A71932ABF400F77C95 /* WeiboSDK.bundle */; };
+		DB25C2AD1932B4A400F77C95 /* TakePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB25C2AC1932B4A400F77C95 /* TakePhotoViewController.m */; };
 		DB29CF8D1921F6F1000EAB57 /* appapplystate.html in Resources */ = {isa = PBXBuildFile; fileRef = DB29CF8C1921F6F1000EAB57 /* appapplystate.html */; };
 		DB6303E418F74ABB0056F188 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6303E318F74ABB0056F188 /* Foundation.framework */; };
 		DB6303E618F74ABB0056F188 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6303E518F74ABB0056F188 /* CoreGraphics.framework */; };
@@ -95,6 +100,15 @@
 		DB25C29619329B9900F77C95 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		DB25C29919329EC600F77C95 /* airportCar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airportCar.png; sourceTree = "<group>"; };
 		DB25C29A19329EC600F77C95 /* coupon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coupon.png; sourceTree = "<group>"; };
+		DB25C29D1932A1AB00F77C95 /* BookCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCarViewController.h; sourceTree = "<group>"; };
+		DB25C29E1932A1AB00F77C95 /* BookCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCarViewController.m; sourceTree = "<group>"; };
+		DB25C2A01932A79400F77C95 /* login@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login@2x.png"; sourceTree = "<group>"; };
+		DB25C2A21932ABDC00F77C95 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = InWanTravel/ThirdPart/libWeiboSDK/libWeiboSDK.a; sourceTree = "<group>"; };
+		DB25C2A61932ABF400F77C95 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		DB25C2A71932ABF400F77C95 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		DB25C2A81932ABF400F77C95 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		DB25C2AB1932B4A400F77C95 /* TakePhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotoViewController.h; sourceTree = "<group>"; };
+		DB25C2AC1932B4A400F77C95 /* TakePhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotoViewController.m; sourceTree = "<group>"; };
 		DB29CF8C1921F6F1000EAB57 /* appapplystate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = appapplystate.html; sourceTree = "<group>"; };
 		DB6303E018F74ABB0056F188 /* InWanTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InWanTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6303E318F74ABB0056F188 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -179,6 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB25C2A91932ABF400F77C95 /* libWeiboSDK.a in Frameworks */,
 				DB6303E618F74ABB0056F188 /* CoreGraphics.framework in Frameworks */,
 				DB6303E818F74ABB0056F188 /* UIKit.framework in Frameworks */,
 				DB6303E418F74ABB0056F188 /* Foundation.framework in Frameworks */,
@@ -201,10 +216,29 @@
 		DB25C29819329EC600F77C95 /* button */ = {
 			isa = PBXGroup;
 			children = (
+				DB25C2A01932A79400F77C95 /* login@2x.png */,
 				DB25C29919329EC600F77C95 /* airportCar.png */,
 				DB25C29A19329EC600F77C95 /* coupon.png */,
 			);
 			path = button;
+			sourceTree = "<group>";
+		};
+		DB25C2A41932ABF400F77C95 /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				DB25C2A51932ABF400F77C95 /* libWeiboSDK */,
+			);
+			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		DB25C2A51932ABF400F77C95 /* libWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DB25C2A61932ABF400F77C95 /* libWeiboSDK.a */,
+				DB25C2A71932ABF400F77C95 /* WeiboSDK.bundle */,
+				DB25C2A81932ABF400F77C95 /* WeiboSDK.h */,
+			);
+			path = libWeiboSDK;
 			sourceTree = "<group>";
 		};
 		DB6303D718F74ABB0056F188 = {
@@ -229,6 +263,7 @@
 		DB6303E218F74ABB0056F188 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB25C2A21932ABDC00F77C95 /* libWeiboSDK.a */,
 				DB6303E318F74ABB0056F188 /* Foundation.framework */,
 				DB6303E518F74ABB0056F188 /* CoreGraphics.framework */,
 				DB6303E718F74ABB0056F188 /* UIKit.framework */,
@@ -240,6 +275,7 @@
 		DB6303E918F74ABB0056F188 /* InWanTravel */ = {
 			isa = PBXGroup;
 			children = (
+				DB25C2A41932ABF400F77C95 /* ThirdPart */,
 				DBB89E4D19217F6B007A5623 /* data */,
 				DBB89E4919217A8C007A5623 /* helper */,
 				DBB89E461920BAF9007A5623 /* RootNavigationController.h */,
@@ -294,6 +330,10 @@
 				DBB89CA81920729D007A5623 /* CouponViewController.m */,
 				DB25C29519329B9900F77C95 /* HomeViewController.h */,
 				DB25C29619329B9900F77C95 /* HomeViewController.m */,
+				DB25C29D1932A1AB00F77C95 /* BookCarViewController.h */,
+				DB25C29E1932A1AB00F77C95 /* BookCarViewController.m */,
+				DB25C2AB1932B4A400F77C95 /* TakePhotoViewController.h */,
+				DB25C2AC1932B4A400F77C95 /* TakePhotoViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -485,7 +525,9 @@
 				DB6303EE18F74ABB0056F188 /* InfoPlist.strings in Resources */,
 				DBB89E25192089A5007A5623 /* MS14038_LK@2x.png in Resources */,
 				DBB89E1A192089A5007A5623 /* MS14010_LK@2x.png in Resources */,
+				DB25C2A11932A79400F77C95 /* login@2x.png in Resources */,
 				DBB89E44192089A5007A5623 /* LKM1412@2x.png in Resources */,
+				DB25C2AA1932ABF400F77C95 /* WeiboSDK.bundle in Resources */,
 				DBB89E43192089A5007A5623 /* LKM1411@2x.png in Resources */,
 				DBB89E21192089A5007A5623 /* MS14029_LK@2x.png in Resources */,
 				DBB89E37192089A5007A5623 /* LKM1323@2x.png in Resources */,
@@ -540,11 +582,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB25C2AD1932B4A400F77C95 /* TakePhotoViewController.m in Sources */,
 				DBB89E5019217F80007A5623 /* CouponData.m in Sources */,
 				DB6303F418F74ABB0056F188 /* AppDelegate.m in Sources */,
 				DBB89E481920BAF9007A5623 /* RootNavigationController.m in Sources */,
 				DBB89CA91920729D007A5623 /* CouponViewController.m in Sources */,
 				DB8237E418F75AEA00F6DD86 /* WebBrowserViewController.m in Sources */,
+				DB25C29F1932A1AB00F77C95 /* BookCarViewController.m in Sources */,
 				DB8237E718F7628A00F6DD86 /* MainNavigationController.m in Sources */,
 				DB6303F018F74ABB0056F188 /* main.m in Sources */,
 				DB25C29719329B9900F77C95 /* HomeViewController.m in Sources */,
@@ -672,6 +716,10 @@
 				GCC_PREFIX_HEADER = "InWanTravel/InWanTravel-Prefix.pch";
 				INFOPLIST_FILE = "InWanTravel/InWanTravel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InWanTravel/ThirdPart/libWeiboSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -689,6 +737,10 @@
 				GCC_PREFIX_HEADER = "InWanTravel/InWanTravel-Prefix.pch";
 				INFOPLIST_FILE = "InWanTravel/InWanTravel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InWanTravel/ThirdPart/libWeiboSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
